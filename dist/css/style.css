@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;800&display=swap");
+/*COMON CSS*/
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+li,
+nav,
+img,
+ol {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+/*Comon Css End*/
+.container {
+  padding: 0 10%;
+}
+.sptc {
+  color: #fe320a;
+}
+.text-color {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fe320a;
+}
+
+/* HeaderPart */
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.menu nav {
+}
+.menu .left {
+  float: left;
+}
+.menu .left img {
+  padding: 10px;
+  width: 70%;
+}
+.menu .right {
+  float: right;
+  padding-right: 20%;
+}
+.menu .right ul {
+  display: flex;
+  padding: 30px 0;
+}
+.menu .right ul li {
+  margin: 0 auto;
+}
+.menu .right ul li a {
+  padding: 0 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.heroarea {
+  background-image: url(../img/bghero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.heroarea .herobg {
+  padding: 150px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.heroarea .herobg .herocontent {
+  text-align: center;
+}
+.heroarea .herobg .herocontent h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  color: #fff;
+  padding-top: 5%;
+}
+.heroarea .herobg .herocontent p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 50px;
+  /* line-height: 12px; */
+}
+.aboutcontent .right button,
+.heroarea .herobg .herocontent button {
+  margin-top: 40px;
+  padding: 20px 35px;
+  border: none;
+  outline: none;
+  background-color: #fe320a;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+/* HeaderPart  End*/
+
+/* ABout Us*/
+.about-us {
+  margin: 80px 0;
+  /* text-align: center; */
+}
+.header-txt {
+  text-align: center;
+  margin: 50px 0;
+}
+.header-txt h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  position: relative;
+}
+.hr {
+  border: none;
+  height: 2px;
+  width: 10%;
+  background-color: #fe320a;
+  margin: 0 auto;
+}
+.header-txt h3::after {
+  content: "";
+  clear: both;
+  display: block;
+
+  padding: 7px 7px;
+  background-color: #fe320a;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+}
+.aboutcontent {
+  display: flex;
+}
+.aboutcontent .left {
+  width: 40%;
+  margin: 0 3%;
+  position: relative;
+}
+.aboutcontent .left .image img {
+  width: 100%;
+}
+.aboutcontent .left .image {
+}
+.aboutcontent .left .social {
+  height: 25%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.aboutcontent .left .image:hover + .social {
+  display: block;
+}
+
+.aboutcontent .left .social h2 {
+  padding-top: 20px;
+  color: #fff;
+}
+.aboutcontent .left .social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutcontent .left .social ul li {
+  margin: 0 10px;
+}
+.aboutcontent .left .social ul li a {
+  padding: 10px 10px;
+  color: white;
+  border-radius: 50%;
+  background-color: rgb(53, 153, 199);
+  font-size: 15px;
+  cursor: pointer;
+}
+.aboutcontent .right {
+  width: 60%;
+  margin: 0 2%;
+}
+.aboutcontent .right h2 {
+  font-size: 26px;
+  color: #000;
+  margin: 0 0 35px 0;
+}
+.aboutcontent .right p {
+  color: #1e1e1e;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.aboutcontent .right .boldd {
+  font-weight: 700;
+  color: #1e1e1e;
+  font-size: 18px;
+}
+.aboutcontent .right .pp {
+  color: #1e1e1e;
+  font-size: 16px;
+}
+.aboutcontent .right button {
+  margin-top: 15px;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  background-color: #fe320a;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+/* ABout Us End here*/
+
+/* More about Us*/
+.moreaboutus {
+  background-image: url(../img/what-i-know.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.moreaboutus .moreaboutcontent {
+  padding: 150px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.moreaboutus .moreaboutcontent h2 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+.moreaboutus .moreaboutcontent a {
+  padding: 10px 10px;
+  border: 1px solid #fff;
+  border-radius: 15%;
+  color: #fff;
+  font-size: 30px;
+}
+/* More ABout Us End here*/
+
+/* Our service Start*/
+.ourservice {
+  margin-bottom: 200px;
+}
+.servicepart {
+  display: flex;
+  margin-bottom: 40px;
+}
+.servicepart .allcon {
+  text-align: center;
+}
+.allcon .svg-inline--fa {
+  height: 4em;
+  color: #fe320a;
+}
+.servicepart .allcon h3 {
+  margin: 30px 0 10px 0;
+}
+.servicepart .allcon p {
+}
+/* Our service Start End */
+
+/* My Skill Start  */
+.skillcon {
+  display: flex;
+}
+.skillcon .left {
+  width: 50%;
+  margin-left: 20px;
+}
+.skillcon .left h3 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+/* .skillcon .left p:nth-child(1) {
+  font-size: 14px;
+  padding-bottom: 20px;
+} */
+.skillcon .left p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.skillcon .right {
+  width: 50%;
+  margin-top: 50px;
+}
+.skillcon .right h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.skillcon .right p {
+}
+.skillcon .right .progresbar {
+}
+.skillcon .right .progresbar h3 {
+  font-weight: 600;
+  font-size: 15px;
+  margin: 10px 0;
+}
+.skillcon .right .progresbar .gress {
+  height: 20px;
+  width: 90%;
+  background: #000;
+  border-radius: 25px;
+  position: relative;
+}
+.skillcon .right .progresbar .gress1 {
+  height: 20px;
+  width: 80%;
+  background: #000;
+  border-radius: 25px;
+  position: relative;
+}
+.skillcon .right .progresbar .gress2 {
+  height: 20px;
+  width: 70%;
+  background: #000;
+  border-radius: 25px;
+  position: relative;
+}
+.skillcon .right .progresbar .gress p {
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+}
+.skillcon .right .progresbar .gress1 p {
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+}
+.skillcon .right .progresbar .gress2 p {
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+}
+.skillcon .right .progresbar .gress::after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 14px;
+  width: 80%;
+  background-color: red;
+  border-radius: 25px;
+  margin-top: 10px;
+  position: absolute;
+  left: 2%;
+  bottom: 15%;
+}
+.skillcon .right .progresbar .gress1::after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 14px;
+  width: 80%;
+  background-color: red;
+  border-radius: 25px;
+  margin-top: 10px;
+  position: absolute;
+  left: 2%;
+  bottom: 15%;
+}
+.skillcon .right .progresbar .gress2::after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 14px;
+  width: 80%;
+  background-color: red;
+  border-radius: 25px;
+  margin-top: 10px;
+  position: absolute;
+  left: 2%;
+  bottom: 15%;
+}
+
+/* My Skill End */
+
+/* Happy Clint Start */
+.hpbgg {
+  background-image: url(../img/happyclint.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 75px;
+}
+.hpccont {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 100px 0;
+}
+.allcont2 {
+  display: flex;
+  margin-left: 51px;
+  margin-top: 20px;
+}
+.allcontt {
+  text-align: center;
+  margin: 0 64px;
+}
+.hpbgg .allcontt a {
+  color: #fff;
+  font-size: 25px;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.allcontt p {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 20px;
+}
+.allcontt h3 {
+  color: #fff;
+  font-size: 19px;
+}
+/* Happy Clint End */
+
+/* Our Portfolio Start */
+.ppg2 {
+  display: flex;
+}
+.porfoliog .ppg {
+  margin: 0 12px 12px 0;
+  position: relative;
+}
+
+.porfoliog .ppg img {
+  width: 100%;
+}
+.porfoliog .ppg::after {
+  content: "";
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.porfoliog .ppg:hover + .ppg::after {
+  display: block;
+}
+/* Our Portfolio End */
+
+/* My Team Start */
+
+.teamimg {
+  width: 25%;
+  margin: 0 10px;
+  position: relative;
+}
+.teamimg img {
+  border-bottom: 4px solid #fe320a;
+  width: 100%;
+}
+.teamimg .teamOverlay {
+}
+.teamimg .teamOverlay h3 {
+  text-align: center;
+  margin-top: 250px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.teamimg .teamOverlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.teamimg img:hover + .teamOverlay {
+  display: block;
+}
+.teamimg .teamOverlay .teamicon ul {
+  display: flex;
+  justify-content: center;
+}
+.teamimg .teamOverlay .teamicon ul li {
+  margin: 10px;
+}
+.teamimg .teamOverlay .teamicon ul li a {
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.disteam {
+  display: flex;
+}
+/* My Team End */
+
+/* My Profile Start */
+.ppmt {
+  margin-top: 75px;
+}
+.myprofilebg {
+  background-image: url(../img/profilebg-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.myprofilebg .myprofileallcon {
+  padding: 100px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.myprofilebg .myprofileallcon img {
+}
+.myprofilebg .myprofileallcon h4 {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 22px;
+}
+.myprofilebg .myprofileallcon p {
+  color: #fff;
+  font: 16px;
+}
+/* My Profile End */
+
+/* Latest Blog Start */
+.latestblog {
+  display: flex;
+}
+.latestblog .latestbcon {
+  margin: 0 10px;
+}
+.latestblog .latestbcon h3 {
+  margin: 12px 0;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.latestbcon button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  background-color: #140e0d;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+/* Latest Blog End */
+
+/* subcribe part */
+.subpt {
+  margin-top: 80px;
+}
+.subpt .subbg {
+  background-image: url(../img/latest-blog.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.subpt .subbg .subbgcon {
+  text-align: center;
+  padding: 100px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.subbg .subbgcon input {
+  margin-top: 50px;
+  width: 30%;
+  margin: 0 15px;
+  padding: 12px 5px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  background: transparent;
+  outline: none;
+}
+.subbg .subbgcon textarea::placeholder,
+.subbg .subbgcon input::placeholder {
+  color: #fff;
+  font-size: 15px;
+}
+.subbg .subbgcon textarea {
+  margin-top: 25px;
+  width: 61%;
+  height: 90%;
+  outline: none;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: #fff;
+}
+/* subcribe part end */
+
+.subbg button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  background-color: #df3619;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+/* subcribe part end */
+/* Footer part */
+.footer {
+}
+.bgap {
+  height: 70px;
+  width: 100%;
+  background: #000;
+}
+.footer .left ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+}
+.footer .left li {
+  margin: 30px 10px;
+}
+.footer .left a {
+  font-size: 22px;
+  color: #fff;
+}
+.bgap .right {
+}
+/* Footer end */
